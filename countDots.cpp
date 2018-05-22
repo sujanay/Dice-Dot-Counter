@@ -86,10 +86,10 @@ int main(int argc, char *argv[])
     ss << p.size();
 
     // string str_disp = p.size()>0?"Sum=" + to_string(p.size()) : "";       // String to be displayed
-    string str_disp = p.size()>0?"Sum=" + ss.str() : ""; 
+    string str_disp ="Sum=" + ss.str(); 
     if(str_disp!="")
     {
-        putText(img_with_keypoints, str_disp, Point(20, 50), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 200, 200), 4); 
+        putText(img_with_keypoints, str_disp, Point(20, 50), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 255, 0), 4); 
     }   
 
     // Show blobs
